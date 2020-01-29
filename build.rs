@@ -57,7 +57,7 @@ fn main() {
 
     // To compile intrinsics.rs for thumb targets, where there is no libc
     if llvm_target[0].starts_with("thumb") {
-        println!("cargo:rustc-cfg=thumb")
+        // println!("cargo:rustc-cfg=thumb")
     }
 
     // compiler-rt `cfg`s away some intrinsics for thumbv6m and thumbv8m.base because

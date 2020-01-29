@@ -70,11 +70,11 @@ where
 }
 
 intrinsics! {
-    #[aapcs_on_arm]
-    #[arm_aeabi_alias = __aeabi_f2d]
-    pub extern "C" fn  __extendsfdf2(a: f32) -> f64 {
-        extend(a)
-    }
+    // #[aapcs_on_arm]
+    // #[arm_aeabi_alias = __aeabi_f2d]
+    // pub extern "C" fn  __extendsfdf2(a: f32) -> f64 {
+    //     extend(a)
+    // }
 
     #[cfg(target_arch = "arm")]
     pub extern "C" fn  __extendsfdf2vfp(a: f32) -> f64 {
